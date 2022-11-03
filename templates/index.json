@@ -2,6 +2,7 @@
   "sections": {
     "16565958709e259b85": {
       "type": "hero-video",
+      "disabled": true,
       "settings": {
         "page_width": "full_width",
         "height": "medium",
@@ -25,7 +26,6 @@
     },
     "26b60e6d-b80c-4cac-9186-bc32afaf5241": {
       "type": "hero-blackdays",
-      "disabled": true,
       "settings": {
         "style__selector": "black",
         "page_width": "full_width",
@@ -34,15 +34,15 @@
         "show_overlay": true,
         "image": "shopify:\/\/shop_images\/Skaermbillede_2021-11-18_kl._14.03.24.png",
         "image_position": "center center",
-        "video_title": "How To Add A Video Background On Shopify",
+        "video_title": "",
         "svg_selector": "blackdays",
         "text_size": "medium",
-        "text_description": "<p>Brug denne tekst til XXX at dele oplysninger om dit brand med dine.<\/p>",
+        "text_description": "<p>Verbessere jetzt die Haltung und lindere Verspannungen<\/p>",
         "text_description_size": "medium",
-        "button_label": "",
-        "button_link": "",
-        "second_button_label": "",
-        "second_button_link": "",
+        "button_label": "Männer",
+        "button_link": "shopify:\/\/collections\/manner",
+        "second_button_label": "Frauen",
+        "second_button_link": "shopify:\/\/collections\/frauen",
         "show_scrolldown": false,
         "show_emark": false,
         "bottom_counter_text": "We send your order in",
@@ -194,11 +194,11 @@
           "type": "quote",
           "settings": {
             "title": "",
-            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops_fdfe9026-9559-4440-aab2-ef9b0a5c0df4.png",
+            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
             "icon": "format_quote",
             "quote": "<p><em>Das Shirt sitzt gut und man merkt die Unterstützung durch das Material.<\/em><\/p>",
             "author": "Angela E.",
-            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_d51d08de-43f4-4aac-b82f-36f72e72f599.png",
+            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
             "quotes_link": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
@@ -208,11 +208,11 @@
           "type": "quote",
           "settings": {
             "title": "",
-            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops_fdfe9026-9559-4440-aab2-ef9b0a5c0df4.png",
+            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
             "icon": "format_quote",
             "quote": "<p><em>Bin in jeglicher Hinsicht zufrieden. Schnelle Lieferung und prima Qualität.<\/em><\/p>",
             "author": "Thomas S.",
-            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_d51d08de-43f4-4aac-b82f-36f72e72f599.png",
+            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
             "quotes_link": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
@@ -222,11 +222,11 @@
           "type": "quote",
           "settings": {
             "title": "",
-            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops_fdfe9026-9559-4440-aab2-ef9b0a5c0df4.png",
+            "quote_image": "shopify:\/\/shop_images\/Quotationmarks_trustedshops.png",
             "icon": "format_quote",
             "quote": "<p><em>Auch bei dieser Bestellung ist alles ganz zu meinen Wünschen verlaufen.<\/em><\/p>",
             "author": "Norbert B.",
-            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_d51d08de-43f4-4aac-b82f-36f72e72f599.png",
+            "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
             "quotes_link": "https:\/\/somelink.com",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
@@ -282,7 +282,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Checkmark.png",
             "title": "Die originale haltungskorrigierende Kleidung",
-            "text": "<p>Die originale Anodyne® haltungskorrigierende Kleidung kann nur auf <a href=\"https:\/\/www.anodyne-shop.de\/\" title=\"anodyne haltungskorrigierende Kleidung\">www.anodyne.at<\/a> erworben werden. Achten Sie darauf, dass es leider viele minderwertige Fälschungen auf dem Markt gibt. Nur ein einziges haltungskorrigierendes Produkt ist sowohl FDA-registriert und als medizinisches Hilfsmittel MDR\/CE-registriert: Anodyne®. Seien Sie beim online Shoppen also achtsam auf Fälschungen.<\/p>"
+            "text": "<p>Die originale Anodyne® haltungskorrigierende Kleidung kann nur auf <a href=\"https:\/\/www.anodyne-shop.de\/\" title=\"www.anodyne-shop.de\">www.anodyne-shop.de<\/a> erworben werden. Achten Sie darauf, dass es leider viele minderwertige Fälschungen auf dem Markt gibt. Nur ein einziges haltungskorrigierendes Produkt ist sowohl FDA-registriert und als medizinisches Hilfsmittel MDR\/CE-registriert: Anodyne®. Seien Sie beim online Shoppen also achtsam auf Fälschungen.<\/p>"
           }
         },
         "16595128814be99d47-1": {

@@ -107,7 +107,12 @@
 
     <!-- Title and description -->
     <title>
-      {{ page_title }}{% if current_tags %}{%- assign meta_tags = current_tags | join: ", " -%} &ndash; {{ "general.meta.tags" | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ "general.meta.page" | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+      {{ page_title }}{% if current_tags %}
+        {%- assign meta_tags = current_tags | join: ", " -%} &ndash; {{ "general.meta.tags" | t: tags: meta_tags }}{% endif %}
+      {% if current_page != 1 %}
+        &ndash; {{ "general.meta.page" | t: page: current_page }}{% endif %}
+      {% unless page_title contains shop.name %}
+        &ndash; {{ shop.name }}{% endunless %}
     </title>
 
     {%- if page_description -%}
@@ -138,18 +143,25 @@
         font-weight: 400;
         font-style: normal;
         font-display: block;
-        src: url({{ settings.icon | append: ".woff2" | asset_url }}) format("woff2");
+        src: url('{{ settings.icon | append: ".woff2" | asset_url }}') format("woff2");
       }
     </style>
 
     <!-- Google Tag Manager -->
     {%- if settings.google_tag_manager_id != blank -%}
       <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer',{{ settings.google_tag_manager_id | json }});
+        (function(w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+          var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer'
+              ? '&l=' + l
+              : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', {{ settings.google_tag_manager_id | json }});
       </script>
     {%- endif -%}
 
@@ -183,59 +195,84 @@
     {{ content_for_header }}
 
     {% render 'review-head' %}
+
+    {{ "fancybox.min.css" | asset_url | stylesheet_tag }}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XRZJK7YM6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-5XRZJK7YM6');
+    </script>
+    <!-- Start of Sleeknote signup and lead generation tool - www.sleeknote.com -->
+    <script id="sleeknoteScript" type="text/javascript">
+      (function() {
+        var sleeknoteScriptTag = document.createElement("script");
+        sleeknoteScriptTag.type = "text/javascript";
+        sleeknoteScriptTag.charset = "utf-8";
+        sleeknoteScriptTag.src = ("//sleeknotecustomerscripts.sleeknote.com/8999.js");
+        var s = document.getElementById("sleeknoteScript");
+        s.parentNode.insertBefore(sleeknoteScriptTag, s);
+      })();
+    </script>
+    <!-- End of Sleeknote signup and lead generation tool - www.sleeknote.com -->
+    <!-- magic scrips start  -->
+    {% assign scriptNumbers = "Y4Mp9B, naRrbY, x7MvKY, Y3rkln, n1aL5n, B6w5mx, xN2rPx, xyqbbx" | split: ", "%}
+    {% for scriptNum in scriptNumbers %}
+      <script type="text/javascript" async src="//s.retargeted.co/1/{{scriptNum }}.js"></script>
+    {% endfor %}
+    <!-- magic scrips end  -->
+    <!-- Tidio -->
+    <!-- <script src="//code.tidio.co/1xvzif5cvmmt9lqezl3e9hnxbrm1h9ll.js" async></script> -->
+    <!-- End of Tidio-->
+
+    <!-- newly add head pixels -->
+      <script>
+!function(f, b, e, v, n, t, s) {
+  if (f.fbq) 
+    return;
   
-    {{ "fancybox.min.css" | asset_url | stylesheet_tag }}  
-
-<!-- Start of Tidio script -->
-<script src="//code.tidio.co/y4ggm28hqjtwd5phf0n7jozlnnlz0dl3.js" async></script>
-<!-- End of Tidio script -->
-    
-<!-- Start of Sleeknote signup and lead generation tool - www.sleeknote.com -->
-<script id="sleeknoteScript" type="text/javascript">
-	(function () {
-		var sleeknoteScriptTag = document.createElement("script");
-		sleeknoteScriptTag.type = "text/javascript";
-		sleeknoteScriptTag.charset = "utf-8";
-		sleeknoteScriptTag.src = ("//sleeknotecustomerscripts.sleeknote.com/8999.js");
-		var s = document.getElementById("sleeknoteScript"); 
-		s.parentNode.insertBefore(sleeknoteScriptTag, s); 
-	})();
-</script>
-<!-- End of Sleeknote signup and lead generation tool - www.sleeknote.com -->
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LMEYD3K4N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1LMEYD3K4N');
-</script>
-
-<!-- magic scrips start  -->
-{% assign scriptNumbers = "Y4Mp9B, naRrbY, x7MvKY, Y3rkln, n1aL5n, B6w5mx, xN2rPx, xyqbbx" | split: ", "%}
-{% for scriptNum in scriptNumbers %}
-<script type="text/javascript" async src="//s.retargeted.co/1/{{scriptNum }}.js"></script>
-{% endfor %}
-<!-- magic scrips end  -->
-{% render 'vitals-loader' %}
-</head>
-  <body id="{{ page_title | handle }}"
-        class="{% if settings.sticky_header %}sticky-header{% endif %}
-                 {% if settings.sticky_announcement_bar %}sticky-announcement_bar{% endif %}
-                 {% if settings.hero_header_desktop %}transparent-header--desktop{% endif %}
-                 {% if settings.hero_header_mobile %}transparent-header--mobile{% else %}transparent-header--no-mobile{% endif %}
-                 {% if settings.dbtfy_menu_bar %}menu_bar--present{% endif %}
-                 {% if customer %}customer-logged-in{% endif %}
-                 template-{{ request.page_type | handle }}">
+  n = f.fbq = function() {
+    n.callMethod
+      ? n.callMethod.apply(n, arguments)
+      : n.queue.push(arguments)
+  };
+  if (! f._fbq) 
+    f._fbq = n;
+  
+  n.push = n;
+  n.loaded = !0;
+  n.version = '2.0';
+  n.queue = [];
+  t = b.createElement(e);
+  t.async = !0;
+  t.src = v;
+  s = b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t, s)
+}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '614742389078964');
+fbq('track', 'PageView');
+</script><noscript><img height="1" width="1" style="display:none" src=https://www.facebook.com/tr?id=614742389078964&ev=PageView&noscript=1/> </noscript>
+    {% render 'vitals-loader' %}
+  </head>
+  <body id="{{ page_title | handle }}" class="{% if settings.sticky_header %}sticky-header{% endif %}
+                       {% if settings.sticky_announcement_bar %}sticky-announcement_bar{% endif %}
+                       {% if settings.hero_header_desktop %}transparent-header--desktop{% endif %}
+                       {% if settings.hero_header_mobile %}transparent-header--mobile{% else %}transparent-header--no-mobile{% endif %}
+                       {% if settings.dbtfy_menu_bar %}menu_bar--present{% endif %}
+                       {% if customer %}customer-logged-in{% endif %}
+                       template-{{ request.page_type | handle }}">
 
     {{ "fancybox.min.js" | asset_url | script_tag }}
 
     <!-- Google Tag Manager (noscript) -->
     {%- if settings.google_tag_manager_id != blank -%}
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ settings.google_tag_manager_id }}"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id={{ settings.google_tag_manager_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
     {%- endif -%}
 
     {%- liquid
@@ -299,19 +336,19 @@
             <div class="wrapper">
               <div class="grid">
                 <div class="grid__item large--eight-twelfths push--large--two-twelfths">
-                  {%- endif -%}
+                {%- endif -%}
 
-                  {%- if template == 'index' -%}
-                    <div class="index-sections">
+                {%- if template == 'index' -%}
+                  <div class="index-sections">
                   {%- endif -%}
 
                   {{ content_for_layout }}
 
                   {%- if template == 'index' -%}
-                    </div>
-                  {%- endif -%}
+                  </div>
+                {%- endif -%}
 
-                  {%- if request.page_type == "captcha" or request.page_type == "policy" -%}
+                {%- if request.page_type == "captcha" or request.page_type == "policy" -%}
                 </div>
               </div>
             </div>
@@ -339,12 +376,8 @@
       <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
       <script>
         var klaviyo = klaviyo || [];
-        klaviyo.init({
-          account: {{ settings.klaviyo_app_public_key | json }},
-          list: {{ settings.klaviyo_app_list_id | json }},
-          platform: "shopify"
-        });
-        klaviyo.enable("backinstock",{
+        klaviyo.init({account: {{ settings.klaviyo_app_public_key | json }}, list: {{ settings.klaviyo_app_list_id | json }}, platform: "shopify"});
+        klaviyo.enable("backinstock", {
           trigger: {
             product_page_text: "Notify Me When Available",
             product_page_class: "btn",
