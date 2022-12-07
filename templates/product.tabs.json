@@ -30,8 +30,8 @@
         "text_alignment_mobile": "small--text-center",
         "show_animation_banner": true,
         "animation_banner_text": "<p><em><strong>Gratis Versand für Einkäufe über €59,00<\/strong><\/em><\/p>",
-        "show_discount_notification": false,
-        "discount_notification_text": "<p>Vi forlænger returretten frem til <strong>d. 20. jan. 2023<\/strong><\/p>",
+        "show_discount_notification": true,
+        "discount_notification_text": "<p>Sie können sicher Weihnachtsgeschenke kaufen - Wir verlängern das Rückgaberecht bis zum <strong>24. Januar 2023<\/strong><\/p>",
         "discount_notification_link": ""
       }
     },
@@ -78,6 +78,7 @@
         "title": "Für Sie empfohlen",
         "subtitle": "",
         "section_style": "section-border",
+        "style__selector": "none",
         "rows": "2",
         "desktop_grid": "4",
         "mobile_grid": "2",
@@ -90,7 +91,8 @@
     },
     "review-widget": {
       "type": "product-review-widget",
-      "settings": {}
+      "settings": {
+      }
     },
     "related-products": {
       "type": "related-products",
@@ -115,7 +117,8 @@
     },
     "back-to-collection": {
       "type": "product-back-to-collection",
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [

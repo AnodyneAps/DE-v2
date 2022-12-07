@@ -2,7 +2,8 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
-      "settings": {}
+      "settings": {
+      }
     },
     "collection-image": {
       "type": "collection-image",
