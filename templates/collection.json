@@ -9,8 +9,8 @@
       "type": "collection-image",
       "settings": {
         "stars_text": "{{ collection.metafields.theme.collection_banner.value }}",
-        "collection_stars": "shopify:\/\/shop_images\/tp_de.jpg",
-        "stars_url": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html"
+        "collection_stars": "shopify:\/\/shop_images\/tp_new.jpg",
+        "stars_url": "https:\/\/de.trustpilot.com\/review\/www.anodyne-shop.de?stars=5"
       }
     },
     "main": {

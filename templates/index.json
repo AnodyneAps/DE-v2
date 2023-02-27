@@ -34,20 +34,19 @@
         "show_overlay": true,
         "image": "shopify:\/\/shop_images\/Skaermbillede_2021-11-18_kl._14.03.24.png",
         "image_position": "center center",
-        "video_title": "<span class=\"first\">Anodyne®<\/span>",
-        "svg_selector": "none",
+        "video_title": "",
+        "svg_selector": "anodyne__vendor",
         "text_size": "medium",
-        "text_description": "<p><strong>Verbessere jetzt die Haltung und lindere Verspannungen<\/strong><\/p>",
+        "text_description": "<p>Sparen Sie bis zu 50% auf alle Demoprodukte. Nur für begrenzte Zeit...<\/p>",
         "text_description_size": "medium",
-        "button_label": "Männer",
-        "button_link": "shopify:\/\/collections\/manner",
+        "button_label": "Angebote",
+        "button_link": "shopify:\/\/collections\/restposten",
         "second_button_label": "Frauen",
-        "second_button_link": "shopify:\/\/collections\/frauen",
-        "show_scrolldown": true,
+        "second_button_link": "",
+        "show_scrolldown": false,
         "show_emark": false,
         "bottom_counter_text": "Wir verpacken Ihre Bestellung in:",
-        "date__selector": "none",
-        "show_bottom_counter": true
+        "show_bottom_counter": false
       }
     },
     "1656942069989ae2c9": {
@@ -199,7 +198,7 @@
             "quote": "<p><em>Das Shirt sitzt gut und man merkt die Unterstützung durch das Material.<\/em><\/p>",
             "author": "Angela E.",
             "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
-            "quotes_link": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html",
+            "quotes_link": "https:\/\/de.trustpilot.com\/review\/www.anodyne-shop.de?stars=5",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
           }
@@ -213,7 +212,7 @@
             "quote": "<p><em>Bin in jeglicher Hinsicht zufrieden. Schnelle Lieferung und prima Qualität.<\/em><\/p>",
             "author": "Thomas S.",
             "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
-            "quotes_link": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html",
+            "quotes_link": "https:\/\/de.trustpilot.com\/review\/www.anodyne-shop.de?stars=5",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
           }
@@ -227,7 +226,7 @@
             "quote": "<p><em>Auch bei dieser Bestellung ist alles ganz zu meinen Wünschen verlaufen.<\/em><\/p>",
             "author": "Norbert B.",
             "stars_pic": "shopify:\/\/shop_images\/trustedshops_128x32_c52276c3-c0d3-4138-b817-0fb1bf505011.png",
-            "quotes_link": "https:\/\/www.trustedshops.ch\/bewertung\/info_XE571F261ADE9439296991B18509E2D95.html",
+            "quotes_link": "https:\/\/de.trustpilot.com\/review\/www.anodyne-shop.de?stars=5",
             "text_alignment": "text-center",
             "text_alignment_mobile": "text-center"
           }
