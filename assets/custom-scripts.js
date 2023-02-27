@@ -52,6 +52,7 @@ function toggleAccordion(el) {
 	}
 }
 
+
 //tabs section
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContentItems = document.querySelectorAll('.content-body');
@@ -103,8 +104,6 @@ const removeActiveHomeTabItemClass = () => {
     homeTabItem.classList.remove('active')
   })
 }
-
-
 // product counter scripts 
 const counter = document.getElementById("product__counter");
 if(counter){
@@ -278,4 +277,7 @@ bottomFlip.addEventListener("animationend", e =>{
 flipCard.append(topFlip, bottomFlip);
 }
 }
+
+
+
 
